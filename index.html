@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎬 Movie Bucket List</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🎥 My Movie Bucket List</h1>
+
+    <form id="movie-form">
+      <input type="text" id="movie-title" placeholder="Movie title..." required>
+      <input type="url" id="movie-url" placeholder="Poster URL... (optional)">
+      <button type="submit">Add Movie</button>
+    </form>
+
+    <div class="filters">
+      <button id="filter-all" class="active">All</button>
+      <button id="filter-watched">Watched</button>
+      <button id="filter-unwatched">Unwatched</button>
+    </div>
+
+    <div id="movie-list" class="movie-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
